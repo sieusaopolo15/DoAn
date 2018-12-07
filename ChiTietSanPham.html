@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<!--CSS-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/ChiTietSanPham.css"/>
+		<link rel="stylesheet" href="css/StyleDanhMuc.css"/>
+		<!--JAVASCRIPT-->
+		<script src="js/onLoad.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/giohang.js"></script>
+	</head>
+	<body>
+		<!--Không có là không chạy được phần javascript, mặc dù rất vô dụng trong cái web này-->
+		<div id="DanhSach" style="display:none"></div>
+		<div id="sotrang" style="display:none"></div>
+		<!---->
+	<div id="MenuHeader">
+	  <div style="float:left; width:25%" align="right">
+				<a href="Index.html"><img src="imgs/logo.png" width="250px" alt=""/></a>
+	  </div>
+	  <div style="float:left; width: 45%; margin-top:10px; margin-left:40px">
+				<input type="text" placeholder="Bạn muốn tìm gì?..." id="search-text"/>
+				<button id="search" onClick="search_coban()" class="fas fa-search"></button>
+			</div>
+			<div style="float:right; width:25%; margin-top:15px;">
+				<a href="Index.html?giohang&0" style="text-decoration: none; height:50px;border-radius:25px; color:orange"><i class="fas fa-shopping-cart"></i></a>
+				<b>Giỏ hàng của bạn</b> 
+			</div>
+	</div>
+		<div style="clear:both; height:500px">
+			<div id="ChiTietSanPham"></div>
+			<div style="clear:both"><h2 align="center">MÔ TẢ SẢN PHẨM</h2>
+				<ul>
+					<li>Chip:  Intel Core i7-8750H (2.2GHz up to 4.1GHz 9MB) </li>
+
+					<li>RAM: 8GB DDR4 2666MHz (2x SO-DIMM socket, up to 32GB SDRAM)</li>
+
+					<li>Ổ cứng: HDD 2TB 5400rpm + 16GB M.2 PCIe (Optane)</li> 
+
+					<li>Chipset đồ họa: NVIDIA GeForce GTX 1050Ti 4GB GDDR5 + Intel UHD Graphics 630</li>
+
+					<li>Màn hình: 15.6 inch Full HD (1920 x 1080) IPS, Anti-Glare</li>
+
+					<li>Hệ điều hành: Windows 10 Home</li>
+					
+					<li>Pin: 3 Cell 52.5 WHr</li>
+				</ul>
+			</div>
+		</div>
+		<div style="clear:both; height:45px; background:#333333; color:white;">
+			<p style="padding-top:13px; margin-left:100px">Copyright SmartShop.com &copy; 2018 - All rights reserved</p>
+		</div>
+		<div style="background:#B5B5B5; height:310px">
+			<div style="float:left; width:30%" align="center">
+				<p align="center"><h4 style="color:#0091FB">VỀ CHẤT LƯỢNG</h4></p>
+				<p align="center">Mỗi sản phẩm mà bạn mua được trên SmartShop.com sẽ có bảo hành 365 ngày và nếu bạn mua nhiều hơn 5 sản phẩm sẽ được một vé coupon giảm 25% khi mua hàng của chúng tôi ^-^ .</p>
+				<p align="center"><h4 style="color:#0091FB">VỀ PHỤC VỤ</h4></p>
+				<p align="center">Chúng tôi luôn luôn lắng nghe ý kiến và phản hồi của khách hàng, đội ngũ của chúng tôi luôn trực 17/24 để sẵn lòng trả lời những câu hỏi của các bạn . Nếu bạn muốn đặt câu hỏi ngay thì hãy hỏi ngay ở box dưới.</p>
+				<input type="text" placeholder="Đặt câu hỏi ở đây" size="40" maxlength="40"/><button type="submit">Gửi</button>
+			</div>
+			<div style="float:left; width:30%" align="center">
+				<p><h4 style="color:#0091FB">SMART SHOP, SMART CHOICE</h4></p>
+				<p><h3>Thành viên nhóm:</h3>
+					<i>	Huỳnh Tuấn Đạt
+						<br>Nguyễn Anh Khoa
+						<br>Lý Kì Đắc Thắng
+						<br>Phạm Minh Đức
+					</i>
+				</p>
+			</div>
+			<div style="float:right; width:30%" align="center">
+				<h4 style="color:#0091FB">SMARTSHOP LUÔN LUÔN CHÀO ĐÓN BẠN</h4>
+			</div>
+		</div>
+	</body>
+</html>

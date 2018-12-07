@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+#danhmuc{
+	background: #474747;
+}
+.danhmuc{
+	color:white;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	height:40px;
+	border-bottom: 1px solid white;
+	text-decoration: none;
+}
+.danhmuc:hover{
+	background: #B4CCA8
+}
+

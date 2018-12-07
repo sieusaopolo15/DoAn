@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-color:white;
+	background-size:cover;
+}
+.login-box{
+	width:280px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	color: #2F4F4F;
+}
+.login-box h1{
+	float:left;
+	font-size:40px;
+	border-bottom: 6px solid #2F4F4F;
+	margin-bottom: 45px;
+	padding: 13px 6px;
+	text-align: center;
+}
+.textbox{
+	width:100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid #2F4F4F;
+	
+}
+.textbox i{
+	width:26px;
+	float: left;
+	text-align: center;
+}
+.textbox input{
+	border:none;
+	outline: none;
+	background:none;
+	color:#2F4F4F;
+	font-size:20px;
+	float:left;
+	margin: 0 5px
+}
+.button{
+	width: 100%;
+	background:none;;
+	border: 2px solid #2F4F4F;
+	color:#2F4F4F;
+	font-size:20px;
+	cursor: pointer;
+	padding: 5px
+}

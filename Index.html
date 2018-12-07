@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mua máy giá rẻ tại SmartShop.com</title>
+		<!--CSS-->
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/menu.css"/>
+		<link rel="stylesheet" href="css/search-box.css"/>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/sotrang.css"/>
+		<link rel="stylesheet" href="css/StyleDanhMuc.css"/>
+		<link rel="stylesheet" href="css/sign.css"/>
+		<!--SCRIPT-->
+		
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/giohang.js"></script>
+		
+		
+		
+		<!-- Thư viện lấy từ trên mạng -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Merienda+One|Open+Sans" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	</head>
+	<body>
+
+<div id="wrapper">
+			<!-- HEADER -->
+			<div id="header">
+				<div class="header01">
+					<a href="#" class="icon01"><img src="imgs/facebook-logo-button.svg" alt=""></a>
+					<a href="#"><img src="imgs/noun_Camera_890022.svg" alt=""></a>
+					<a href="#"><img src="imgs/twitter-logo-button.svg" alt=""></a>
+					<a href="#"><img src="imgs/google-plus-logo-button.svg" alt=""/></a>
+					<h5>Hotline:<a href="#"><strong style="color: #242424;"> 028-3835-4409</strong></a></h5>
+				<div class="log">
+					
+					<div id="sign-zone"><button type="button" class="sign-btn" id="sign-in-btn">Đăng nhập</button> &nbsp;
+						<button type="button" class="sign-btn" id="sign-up-btn">Đăng kí</button></div>
+					<button type="button" class="sign-btn2 user-category">Đăng xuất</button> &nbsp;
+					<button type="button" class="sign-btn2 user-category" id="username-display"></button>
+					<div class="sign-box" id="sign-in-box">
+						<span class="close" id="close-sign-in">&times;</span>
+                        <form class="zoom" id="sign-in-form" name="sign-in-form" method="post">
+							<h1>Đăng nhập</h1>
+                            <p>Nhập vào tài khoản và mật khẩu của bạn để tiến hành mua hàng</p>
+                            <hr>
+                            <label for="username"><b>Email / Tên tài khoản</b></label>
+                            <input type="text" placeholder="Tài khoản" name="username">
+                            <label for="psw"><b>Mật khẩu</b></label>
+                            <input type="password" placeholder="Mật khẩu" name="psw">
+                            <div class="clear">
+                                <button id="cancel-sign-in" class="cancel-btn">Cancel</button>
+                                <input type="button" name="sign-in-submit" value="Sign in">
+                            </div>
+						</form>
+					</div>
+					<div class="sign-box" id="sign-up-box">
+                        <span class="close" id="close-sign-up">&times;</span>
+                        <form class="zoom" name="sign-up-form" id="sign-up-form" method="post">
+                            <div>
+                                <h1>Đăng ký tài khoản</h1>
+                                <p>Xin hãy nhập đầy đủ thông tin</p>
+                                <hr>
+                                <label for="email"><b>Tài khoản / Email</b><i style="font-size:14px;padding-left:5px">(Tối thiểu 5 ký tự)</i></label>
+                                <input type="text" placeholder="Email" name="email">
+
+                                <label for="psw"><b>Mật khẩu</b></label>
+                                <input type="password" placeholder="Mật khẩu" name="psw">
+
+                                <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                                <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat">
+
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Đồng ý điều khoản
+                                </label>
+                                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                                <div class="clearfix">
+                                    <button id="cancel-sign-up" class="cancel-btn">Cancel</button>
+                                    <input type="button" name="sign-up-submit" value="Sign up">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+					
+				</div>
+				</div>
+				
+			  	<div>
+					<div class="row">
+						<div class="col-md-4 logo1">
+							<a href="index.html"><img src="imgs/logo1.jpg" alt=""></a>
+						</div>		
+						<div style="float:right; height:80px">
+							<div class="searching-box">
+								<input type="text" placeholder="Bạn muốn tìm gì?..." id="search-text" style="padding-top:5px;"/>
+								<button onClick="search_coban();" id="button"> 
+									<i class="fas fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- MENU -->
+			<div id="menu" style="clear:both">
+				<ul>
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="">Hướng dẫn mua hàng</a></li>
+					<li><a href="">Chăm sóc Khách hàng</a>
+						<ul class="sub-menu1">
+							<li><a href="tuvan.html">Tư vấn</a></li>
+							<li><a href="">Điều khoản giao dịch</a></li>
+						</ul>
+					</li>
+					<li><a href="Index.html?giohang&0" onClick="KiemTra()">Giỏ hàng</a></li>
+					<li><a href="">Liên hệ</a></li>
+				</ul>
+			</div>
+			<!-- CONTENT -->
+			<div id="content">
+				<div id="left">
+					<div>&nbsp;</div>
+					<div align="center" id="abc"><b>Danh Mục sản phẩm</b></div>
+					<div id="danhmuc" style="margin-right:1px"></div>
+				</div>
+				<div id="middle">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active circle"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1" class="circle"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2" class="circle"></li>
+  					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+						<img src="imgs/banner01.png" alt="" style="width:100%; height:450px">
+						</div>   
+
+						<div class="item">
+						<img src="imgs/banner02.png" alt="" style="width:100%; height:450px">
+						</div>
+						<div class="item">
+							<img src="imgs/banner03.png" alt="" style="width:100%; height:450px">
+						</div>
+					</div>
+					<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span></a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span></a>
+					<!--End banner-->
+				  </div>
+			  </div>
+				<div id="tieude" style="clear:both"></div>
+				<div id="Search_nangcao()"></div>
+				<div id="DanhSach"></div>
+				<div style="clear:both; margin-bottom:1px" align="center" id="sotrang"></div>
+			</div>
+			<!-- FOOTER -->
+			<div class="footer1">
+				<div class="row">
+					<div class="footer1_text col-sm-7">
+						<h2>Yêu thích dịch vụ của chúng tôi?</h2>
+						<p>Hãy để lại email của bạn để chúng tôi có thể liên lạc bạn khi có những sản phẩm mới nhất.</p>
+					</div>
+					<div class="footer1_form col-sm-5">
+						<form action="#">
+  							<div>
+    							<input type="email" class="form-control" id="email" placeholder="Nhập email của bạn...">
+  							</div>
+						</form>
+					</div>
+					<div class="footer1_btn col-sm-2">
+						<button type="button">SUBSCRIBE</button>
+					</div>
+				</div>
+			</div>
+			<div class="footer2">
+				<div class="footer2_text2 col-sm-4" style="padding-top: 20px;">
+					<p>CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ SMARTSHOP</p>
+					<p>&copy;2018 Công Ty Cổ Phần Thương Mại - Dịch Vụ SmartShop / GPĐKKD số 0123456789 do Sở KHĐT TP.HCM cấp</p>
+				</div>
+				<div class="footer2_text2 col-sm-4">
+					<a href="#" style="text-decoration: none"><h3>Thông tin liên hệ</h3></a>
+					<p>Hotline: 028-3835-4409</p>
+					<p>Email: 123@sgu.edu.vn</p>
+					<p>Địa chỉ: 273 An Dương Vương, Phường 3, Quận 5, Hồ Chí Minh</p>
+				</div>
+				<div class="footer2_text3 col-sm-2">
+					<a href="#" style="text-decoration: none"><h3>Chính sách mua hàng và bảo hành</h3></a>
+					<a href="#" style="text-decoration: none"><h3>Hỗ trợ khách hàng</h3></a>
+					<a href="#" style="text-decoration: none"><h3>Thông tin SmartShop</h3></a>
+					<a href="#" style="text-decoration: none"><h3>FAQ</h3></a>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>&copy;Copyright 2018 <strong>SmartShop</strong>.com Alrights Reserved.</p>
+			</div>
+		
+	<button onclick="topFunction()" id="go-top-btn" title="Go to top">Top</button>						
+	
+</div>
+		
+		<script src="js/sign.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/onLoad.js"></script>
+	</body>
+</html>

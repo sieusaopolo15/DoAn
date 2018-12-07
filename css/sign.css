@@ -1,0 +1,113 @@
+.close{
+	font-size:3em;
+	color:#fff;
+	position:absolute;
+	top:10px;
+	right:50px;
+}
+.close:hover{
+	color:#ff5959;
+}
+/*Sign up form*/
+#sign-up-box input[type="text"] ,#sign-up-box input[type="password"]{
+	font-family: "Open Sans";
+	width:100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+} 
+#sign-up-box input[type="text"]:focus ,#sign-up-box input[type="password"]:focus{
+	background:#ddd;
+	outline:none;
+}
+/*Sign in form*/
+#sign-in-box input[type="text"] ,#sign-in-box input[type="password"]{
+		font-family: "Open Sans";
+        width:100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+} 
+#sign-in-box input[type="text"]:focus ,#sign-in-box input[type="password"]:focus{
+        background:#ddd;
+        outline:none;
+}
+.clear:after{
+	content: "";
+	clear:both;
+	display:table;
+}
+.sign-box{
+	display: none;
+	width:100%;
+	height:100vh;
+	position:fixed;
+	background: #474e5d;
+	z-index:99;
+	top:0;
+	right:0;
+	padding-top:50px;
+	overflow:auto;
+	text-align: left;
+}
+.sign-box hr{
+	border:2px solid #f1f1f1;
+}
+.sign-box form{
+    padding:1.2em;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 70%;
+}
+.cancel-btn{
+	background-color: #ff5959;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    width:50%;
+    float:left;
+}
+input[name="sign-in-submit"], input[name="sign-up-submit"]{
+	font-family: "Open Sans";
+    background-color: #00336f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    float:left;
+    opacity: 0.9;
+}
+input[name="sign-up-submit"]:hover, .cancel-btn:hover{
+    opacity:1;
+}
+.zoom{
+   -webkit-animation-name:zoom;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-name:zoom;
+    -moz-animation-duration: 0.5s;
+    animation-name:zoom;
+    animation-duration: 0.5s;
+}
+@-webkit-keyframes zoom{
+    from{transform:scale(0,0);}
+    to{transfrom:scale(1,1);}
+}
+@-moz-keyframes zoom{
+    from{transform:scale(0,0);}
+    to{transfrom:scale(1,1);}
+}
+@keyframes zoom{
+    from{transform:scale(0,0);}
+    to{transfrom:scale(1,1);}
+}

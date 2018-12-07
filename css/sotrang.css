@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sotrang{
+	text-align: center;
+	display:inline-block;
+	text-decoration: none;
+	color:black;
+	width:50px;
+	height:25px;
+	background-color:#D1D1D1;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+.sotrang:hover{
+	background:#A09F9F;
+}
+
+
